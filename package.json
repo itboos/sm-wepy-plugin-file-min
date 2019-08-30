@@ -1,0 +1,29 @@
+{
+  "name": "sm-wepy-plugin-file-min",
+  "homepage": "https://github.com/itboos/sm-wepy-plugin-file-min",
+  "bugs": {
+    "url": "https://github.com/itboos/sm-wepy-plugin-file-min/issues"
+  },
+  "version": "0.0.2",
+  "description": "wepy uglify wxml and json file",
+  "dependencies": {
+    "pretty-data": "^0.40.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itboos/sm-wepy-plugin-file-min"
+  },
+  "keywords": [
+    "wepy",
+    "wepy2.0",
+    "compress",
+    "wxml",
+    "json"
+  ],
+  "author": "xueqi",
+  "license": "MIT"
+}
