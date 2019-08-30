@@ -12,8 +12,11 @@ function FileMinPlugin(config = {}) {
       for (let i = 0, len = comps.length; i < len; i++) {
         t = comps[i].sfc.template
         c = comps[i].sfc.config
-        if (/^(wxml|xml|json)$/.test(t.lang)) {
+        if (/^(wxml|xml)$/.test(t.lang)) {
           t.outputCode = _prettyData.pd.xmlmin(t.outputCode)
+        }
+        if (/^json$/.test(c.lang)) {
+          c.outputCode = _prettyData.pd.jsonmin(c.outputCode)
         }
       }
       return comps
