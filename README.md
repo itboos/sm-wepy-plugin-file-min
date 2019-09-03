@@ -37,7 +37,8 @@ let options = {
   enable: true,
   wxml: true, 
   json: true,
-  wxss: false // 默认不压缩wxss, 因为大部分开发者有用 less 或sass 的插件， 已经压缩过了 wxss。
+  // 默认不压缩 wxss, 因为大部分开发者有用 less 或 sass 插件， 已经压缩过了 wxss。
+  wxss: false
 }
 ```
 
