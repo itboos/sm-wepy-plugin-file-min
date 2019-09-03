@@ -17,7 +17,7 @@ module.exports.plugins.push(FileMinPlugin())
 // 关闭压缩功能:
 module.exports.plugins.push(FileMinPlugin({ enable: false }))
 ```
-或者根据环境变量来判断：
+或者根据你配置的环境变量来判断：
 
 ```javascript
 const isCompress = process.env.COMPRESS === 'compress';
@@ -31,4 +31,13 @@ if (isCompress) {
 
 你提供的配置选项 ```options``` 的 enable 字段 用于配置否关闭压缩功能。默认为开启
 
+内部默认配置如下：
+```javascript
+let options = {
+  enable: true,
+  wxml: true, 
+  json: true,
+  wxss: false // 默认不压缩wxss, 因为大部分开发者有用 less 或sass 的插件， 已经压缩过了 wxss。
+}
+```
 
