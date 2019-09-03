@@ -4,7 +4,7 @@
   "bugs": {
     "url": "https://github.com/itboos/sm-wepy-plugin-file-min/issues"
   },
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "wepy uglify wxml and json file",
   "dependencies": {
     "pretty-data": "^0.40.0"

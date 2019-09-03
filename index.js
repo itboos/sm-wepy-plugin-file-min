@@ -21,7 +21,7 @@ function FileMinPlugin(options = {}) {
         if (config.wxml && /^(wxml|xml)$/.test(t.lang)) {
           t.outputCode = _prettyData.pd.xmlmin(t.outputCode)
         }
-        if (config.json &&/^json$/.test(c.lang)) {
+        if (config.json && /^json$/.test(c.lang)) {
           c.outputCode = _prettyData.pd.jsonmin(c.outputCode)
         }
         if (config.wxss && /^wxss$/.test(c.lang)) {
